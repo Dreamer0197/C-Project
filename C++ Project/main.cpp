@@ -6,9 +6,17 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    
+    int fibSeq[5] = {1,1,2,3,5};
+    int *fibPtr;
+    fibPtr=fibSeq;
+    cout<<"\n fibSeq points to :"<< *fibSeq<< endl;
+    for(int i=0;i<5;i++){
+        cout<<"\n fibSeq["<<i<<"]= "<<*(fibPtr+i)<< endl;//parantez dışına koyulan * pointerın değerini yazmamıza yardım ediyor
+    }
+   
+    
 }
